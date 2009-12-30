@@ -1,4 +1,4 @@
-txtSSH
+txtShell
 ======
 
 A daemon that reads in a (likely private) RSS feed from twitter, takes in the text as shell input to the machine it's running on, and sends the shell output as a SMS text message. It is written in PHP.
