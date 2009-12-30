@@ -7,18 +7,14 @@ The only reason that twitter is used is because anybody can text twitter free. O
 
 This is probably *NOT* secure.
 
----
-
 Possible Uses
 ----
 
-**This program gives anybody with text messages the possibility of extended functionality, including access to the web and processing power of a remote computer.**
+**This program gives anybody with text messages the possibility of extended functionality, including access to the web and processing power of a remote computer (or a smartphone)**
 
 The only downside is *all user interaction must be through SMS messages.* 
 
 With simple syntax and scripts, one could write programs to get weather and other information from the web, send (short) emails, do system maintenance, and much more. 
-
-----
 
 Setup and Use
 ----
