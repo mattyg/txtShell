@@ -1,11 +1,9 @@
-txtShell
+txtApps
 ======
 
-A daemon that reads in a (likely private) RSS feed from twitter, takes in the text as shell input to the machine it's running on, and sends the shell output as a SMS text message. It is written in PHP.
+This is a server application that can run a script and send its output via a SMS messages. 
 
-The only reason that twitter is used is because anybody can text twitter free. Otherwise this would require a GSM/GPRS modem. 
-
-This is probably *NOT* secure.
+It uses twitter to read in SMS messages for free. Otherwise it would require a GSM/GPRS modem. The ability to use a GSM/GPRS modem as txt message input will be added in the future.
 
 Possible Uses
 ----
@@ -14,9 +12,23 @@ Possible Uses
 
 The only downside is *all user interaction must be through SMS messages.* 
 
-With simple syntax and scripts, one could write programs to get weather and other information from the web, send (short) emails, do system maintenance, and much more. 
+With simple syntax and scripts, one could write programs to get information from the internet, send (short) emails, do system maintenance, and much more.
+
+Developer Info
+----
+
+**The value of txtApps is based on the scripts that will be created by developers**
+
+Add a script in any language to the 'scripts' folder and make it executable. It will be run with its name (minus the file extension).
+
+An included example script is called 'weather.php'.
+The txt message to run this script is 'weather 02420' (02420 is a command line argument).
 
 Setup and Use
 ----
 
-Run the master script, it calls the slave script.
+Edit the file 'config.php' with your phone number, carrier email domain, and the url of your twitter feed.
+
+Run the master script, it calls the slave script every 10 seconds to check for new updates on your twitter feed.
+
+Text messages commands are styled 'command arg1 arg2 arg3' and the command is simply the script name minus its file extension.
